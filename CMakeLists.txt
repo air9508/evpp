@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.5)
 
 project (safe-evpp C CXX)
 
@@ -25,7 +25,7 @@ if (UNIX)
          -fms-extensions
          -Wfloat-equal
          -Wextra
-         -std=c++11
+         -std=c++14
     )
     include_directories (${PROJECT_SOURCE_DIR}
                          ${PROJECT_SOURCE_DIR}/3rdparty)
